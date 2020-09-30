@@ -1,0 +1,62 @@
+<ul class="steps">
+  <li class="steps-segment" [ngClass]="{'is-active': isActive('page1')}">
+    <a [routerLink]="['/page1']" class="steps-marker"></a>
+  </li>
+  <li class="steps-segment" [ngClass]="{'is-active': isActive('page2')}">
+    <a [routerLink]="['/page2']" class="steps-marker"></a>
+  </li>
+  <li class="steps-segment " [ngClass]="{'is-active': isActive('page3')}">
+
+    <a [routerLink]="['/page3']" class="steps-marker"></a>
+
+  </li>
+
+</ul>
+
+
+
+<ul class="steps " style="display: none;">
+  <li class="step-item is-info" [ngClass]="{'is-completed': isComplete(0)}" data-e2e="step-item">
+    <div class="step-marker" [ngClass]="{'has-background-link': isComplete(0)}"></div>
+    <div class="step-details" [ngClass]="{'has-text-primary': isComplete(0)}">
+      <p class="step-title">Create Bundle</p>
+    </div>
+  </li>
+  <!--
+  <li class="step-item is-info" [ngClass]="{'is-completed': isComplete(0)}" data-e2e="step-item">
+    <div class="step-marker" [ngClass]="{'has-background-link': isComplete(0)}"></div>
+    <div class="step-details" [ngClass]="{'has-text-primary': isComplete(0)}">
+      <p class="step-title">Create Bundle</p>
+    </div>
+  </li>
+  <li class="step-item is-info" [ngClass]="{'is-completed': isComplete(1)}" data-e2e="step-item">
+    <div class="step-marker" [ngClass]="{'has-background-link': isComplete(1)}"></div>
+    <div class="step-details" [ngClass]="{'has-text-primary': isComplete(1)}">
+      <p class="step-title">Edit Information</p>
+    </div>
+  </li>
+  <li class="step-item is-info" [ngClass]="{'is-completed': isComplete(2)}" data-e2e="step-item">
+    <div class="step-marker" [ngClass]="{'has-background-link': isComplete(2)}"></div>
+    <div class="step-details" [ngClass]="{'has-text-primary': isComplete(2)}">
+      <p class="step-title">App Selection</p>
+    </div>
+  </li>
+  <li class="step-item is-info" [ngClass]="{'is-completed': isComplete(3)}" data-e2e="step-item">
+    <div class="step-marker" [ngClass]="{'has-background-link': isComplete(3)}"></div>
+    <div class="step-details" [ngClass]="{'has-text-primary': isComplete(3)}">
+      <p class="step-title">Whitelist Bundle</p>
+    </div>
+  </li>
+  <li class="step-item is-info" [ngClass]="{'is-completed': isComplete(4)}" data-e2e="step-item">
+    <div class="step-marker" [ngClass]="{'has-background-link': isComplete(4)}"></div>
+    <div class="step-details" [ngClass]="{'has-text-primary': isComplete(4)}">
+      <p class="step-title">Bundle Review</p>
+    </div>
+  </li>
+  <li class="step-item is-info" [ngClass]="{'is-completed': isComplete(5)}" data-e2e="step-item">
+    <div class="step-marker" [ngClass]="{'has-background-link': isComplete(5)}"></div>
+    <div class="step-details" [ngClass]="{'has-text-primary': isComplete(5)}">
+      <p class="step-title">Complete</p>
+    </div>
+  </li> -->
+</ul>
